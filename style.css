@@ -21,29 +21,28 @@
   height: 100vh;
   background: url(images/dark-bg.jpeg) no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .banner {
-  width: 100%;
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  width: 100%;
 }
 
 .banner-heading {
+  height: 6rem;
   margin-bottom: 4rem;
-  height: 20rem;
   perspective: 50rem;
   overflow: hidden;
 }
 
 /* Caution */
 .banner-heading span {
-  font-family: "Oswald", sans-serif;
-  font-size: 8rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
@@ -58,42 +57,46 @@
 }
 
 .heading-1 {
-  animation: animatedHeading 12s 3s infinite;
+  animation: animateHeading 12s 3s infinite;
 }
 
 .heading-2 {
-  animation: animatedHeading 12s 6s infinite;
+  animation: animateHeading 12s 6s infinite;
 }
 
 .heading-3 {
-  animation: animatedHeading 12s 9s infinite;
+  animation: animateHeading 12s 9s infinite;
 }
 
 .heading-4 {
-  animation: animatedHeading 12s 12s infinite;
+  animation: animateHeading 12s 12s infinite;
 }
 
-@keyframes animatedHeading {
+@keyframes animateHeading {
   0% {
-    trasnform: translateZ(8rem);
+    transform: translateZ(8rem);
     opacity: 0;
     letter-spacing: 3rem;
   }
+
   3% {
     transform: translateZ(0);
     opacity: 1;
     letter-spacing: 1.5rem;
   }
+
   25% {
     transform: translateZ(0);
     opacity: 1;
     letter-spacing: 1.5rem;
   }
+
   28% {
     transform: translateZ(8rem);
     opacity: 0;
     letter-spacing: 3rem;
   }
+
   100% {
     transform: translateZ(8rem);
     opacity: 0;
@@ -103,7 +106,7 @@
 
 /* Caution */
 .banner-paragraph {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
@@ -115,8 +118,8 @@
 }
 
 .banner-btn {
-  width: 30rem;
-  height: 6rem;
+  width: 25rem;
+  height: 4rem;
   background: linear-gradient(to right, #9b0e0e, #7a1010);
   color: #fff;
   font-size: 2rem;
